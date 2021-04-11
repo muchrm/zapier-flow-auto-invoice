@@ -1,12 +1,12 @@
 {
   "name": "flow-auto-invoice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --recursive"
   },
   "dependencies": {
-    "zapier-platform-core": "^10.2.0"
+    "zapier-platform-core": "10.2.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
