@@ -4,12 +4,11 @@ const createIssue = (z, bundle) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      'authorization': `Bearer ${bundle.authData.ACCESS_TOKEN}`
+      'Accept': 'application/json'
     },
-    body: JSON.stringify({
-      'name': bundle.inputData.ContactName
-    }),
+    body: {
+      'name': bundle.inputData.name
+    },
   });
   return responsePromise
     .then(response => JSON.parse(response.content));
